@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Grumble</string>
+    <string name="home">Home</string>
+    <string name="friends">Friends</string>
+    <string name="game">Games</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email Adress</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

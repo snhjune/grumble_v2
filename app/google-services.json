@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973010144069",
+    "project_id": "grumble-8cc19",
+    "storage_bucket": "grumble-8cc19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973010144069:android:6076642d28ac5877bc0c2c",
+        "android_client_info": {
+          "package_name": "com.example.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973010144069-3j84uivi8kai7i0pn82s10iqdt8jqidb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuK4E0AG2B9JCnyIH36xT4iEavIXH2DyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973010144069-3j84uivi8kai7i0pn82s10iqdt8jqidb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
