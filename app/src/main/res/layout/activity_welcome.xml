@@ -32,20 +32,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".4"
         android:textAlignment="center"/>
+
+
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="explorer your favorite food"
-        android:textColor="@color/white"
         android:textAlignment="center"
-        android:textStyle="bold"
+        android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Grumble"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/Grumble" />
 
     <Button
         android:id="@+id/button"
