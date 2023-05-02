@@ -4,13 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.foodapp.R;
 import com.example.foodapp.adapters.HomeHorAdapter;
 import com.example.foodapp.adapters.HomeVerAdapter;
@@ -20,8 +23,6 @@ import com.example.foodapp.models.HomeHorModel;
 import com.example.foodapp.models.HomeVerModel;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.zip.Inflater;
 
 public class HomeFragment extends Fragment implements UpdateVerticalRec {
 
@@ -73,10 +74,20 @@ private FragmentHomeBinding binding;
         homeVerticalRec.setAdapter(homeVerAdapter);
         homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL,false));
 
+        ImageSlider imageSlider = root.findViewById(R.id.imageSlider);
+        ArrayList<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.img, ScaleTypes.FIT));
+        imageSlider.setImageList(slideModels,ScaleTypes.FIT);
+
         return root;
     }
 
-@Override
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;

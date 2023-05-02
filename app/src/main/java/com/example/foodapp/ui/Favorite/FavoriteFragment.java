@@ -24,6 +24,7 @@ private FragmentSlideshowBinding binding;
 
         final TextView textView = binding.textSlideshow;
         favoriteViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
 

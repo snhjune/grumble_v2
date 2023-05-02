@@ -29,6 +29,12 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
     boolean select = true;
     int row_index = -1;
 
+    /**
+     *
+     * @param updateVerticalRec
+     * @param activity
+     * @param list
+     */
     public HomeHorAdapter(UpdateVerticalRec updateVerticalRec, Activity activity, ArrayList<HomeHorModel> list) {
         this.updateVerticalRec = updateVerticalRec;
         this.activity = activity;
@@ -41,6 +47,13 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_horizontal_item,parent,false));
     }
 
+    /**
+     * Hardcoded restaurants stored in ArrayList.
+     * Categorize the restuarants by its food types. (Ex. sushi,hamburger,pizza, and etc)
+     * @param holder The ViewHolder which should be updated to represent the contents of the
+     *        item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
