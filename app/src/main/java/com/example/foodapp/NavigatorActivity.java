@@ -38,7 +38,7 @@ private ActivityNavigator3Binding binding;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_spinWheel, R.id.nav_favorite, R.id.nav_game)
+                R.id.nav_home, R.id.nav_spinWheel, R.id.nav_favorite, R.id.nav_game, R.id.nav_permissions, R.id.nav_activities)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_navigator3);

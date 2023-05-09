@@ -19,8 +19,8 @@
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="-96dp" />
-        <EditText
-            android:id="@+id/editText"
+        <Button
+            android:id="@+id/btn_map"
             android:background="@drawable/search_bg"
             android:textColorHint="@color/black"
             android:layout_width="300dp"
@@ -33,16 +33,25 @@
             app:layout_constraintStart_toStartOf="parent"
             android:textSize="13sp"
             app:layout_constraintTop_toTopOf="parent"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trendings"
+            android:id="@+id/text_trendings"
+            android:fontFamily="@font/lobster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_map"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/slider"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="4dp"
-            app:cardBackgroundColor="@color/background"
+            app:cardBackgroundColor="@color/background_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" >
+            app:layout_constraintTop_toBottomOf="@+id/text_trendings" >
             <com.denzcoskun.imageslider.ImageSlider
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -56,7 +65,16 @@
             </com.denzcoskun.imageslider.ImageSlider>
 
         </androidx.cardview.widget.CardView>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:id="@+id/text_categories"
+            android:fontFamily="@font/lobster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_hor_rec"
             android:layout_width="match_parent"
@@ -64,8 +82,17 @@
             android:layout_margin="6dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/slider" />
-
+            app:layout_constraintTop_toBottomOf="@+id/text_categories" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants"
+            android:id="@+id/text_restaurants"
+            android:fontFamily="@font/lobster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_hor_rec"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_ver_rec"
             android:layout_width="match_parent"
@@ -74,7 +101,7 @@
             android:layout_marginTop="6dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_hor_rec"/>
+            app:layout_constraintTop_toBottomOf="@+id/text_restaurants"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>

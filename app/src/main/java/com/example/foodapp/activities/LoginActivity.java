@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.foodapp.MainActivity;
+import com.example.foodapp.NavigatorActivity;
 import com.example.foodapp.R;
 import com.example.foodapp.ui.home.HomeFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -151,7 +153,7 @@ public class LoginActivity extends AppCompatActivity {
      * the function send user to main page of the app if login successful.
      */
     private void sendUserToNextActivity() {
-        Intent intent= new Intent(LoginActivity.this, HomeFragment.class);
+        Intent intent= new Intent(LoginActivity.this, NavigatorActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

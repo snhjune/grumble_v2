@@ -24,7 +24,17 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_game"
-        android:name="com.example.foodapp.ui.game.SearchFragment"
+        android:name="com.example.foodapp.ui.game.GoogleMapFragment"
         android:label="Google Map"
         tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_permissions"
+        android:name="com.example.foodapp.PermissionsActivity"
+        android:label="Google Map"
+        tools:layout="@layout/activity_permissions" />
+    <activity
+        android:id="@+id/nav_activities"
+        android:name="com.example.foodapp.MainActivity"
+        android:label="Activities"
+        tools:layout="@layout/activity_main"/>
 </navigation>

@@ -9,16 +9,17 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_game"
-            android:icon="@drawable/fb"
-            android:title="@string/google_map"/>
+            android:id="@+id/nav_permissions"
+            android:icon="@drawable/baseline_location_on_24"
+            android:title="@string/google_map" />
         <item
-            android:id="@+id/nav_spinWheel"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/spin_wheel" />
-        <item
-            android:id="@+id/nav_favorite"
+            android:id="@+id/nav_activities"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/favorite" />
+            android:title="Activities"/>
+        <item
+            android:id="@+id/nav_socials"
+            android:icon="@drawable/friend_icon"
+            android:title="Friends"/>
+
     </group>
 </menu>
